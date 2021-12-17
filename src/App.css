@@ -1,25 +1,61 @@
-.app {
-  height: 100vh;
-  width: 100vw;
-  transition: background-color 1s ease-in;
+*{
+  font-family: raleway;
 }
+.navbar{
+  background-color: rgb(131, 131, 194);
+  height: 80px;
+}
+input{
+  margin-top: 20px;
+  margin-left: 15px;
+}
+#submit{
+  width: 200px;
+  height: 40px;
+  background-color:rgb(114, 32, 245);
+}
+body{
 
-.app__header,
-.app__main {
-  width: 100%;
+  background-color: rgb(121, 144, 212);
+}
+.main{
+  width: 200px;
+}
+h3{
+  font-weight: bold;
+  color: white;
+}
+.content{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-  font-family: "Raleway", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
+p{
+  color: rgb(15, 15, 54);
+}
+.temp{
+  font-weight: bold;
+  font-size: 25px;
+}
+.A{
+  font-weight: bold;
+}
+.mostly{
+  width: 100px;
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin:1rem;
+}
+.footerA{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
 
-/*  Search bar */
-
-/* Current weather */
-
-div {
-  border: 5px solid red;
+}
+.footerA p{
+  text-align: center;
 }
