@@ -1,22 +1,42 @@
 *{
   font-family: raleway;
+  margin: 0;
 }
 .navbar{
-  background-color: rgb(131, 131, 194);
+  background-color: #7c9ed5;
   height: 80px;
+  margin: 0;
 }
 input{
-  margin-top: 20px;
-  margin-left: 15px;
+  margin-top: 30px;
+  margin-left: 30px;
+  color: #fff;
 }
-#submit{
-  width: 200px;
+.submit{
+  width: 150px;
   height: 40px;
-  background-color:rgb(114, 32, 245);
+  margin-left: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #17a2b8;
+  color: #fff;
 }
+
 body{
 
-  background-color: rgb(121, 144, 212);
+  background-color: #abcbec;
+}
+.navbar input{
+  width: 15rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(0, 102, 102);
+  color: white;
+}
+.navbar input:focus{
+  outline: none;
 }
 .main{
   width: 200px;
@@ -58,4 +78,16 @@ p{
 }
 .footerA p{
   text-align: center;
+}
+
+
+@media only screen and (max-width: 440px){
+	.navbar{
+    display: flex;
+    flex-direction: row;
+    /* height: 40px; */
+  }
+  .navbar input, .navbar button{
+    width: 5rem;
+  }
 }

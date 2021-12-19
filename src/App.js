@@ -32,8 +32,8 @@ class App extends Component {
       <div className="app">
         <nav class="navbar">
           <form>
-            <input type="search" placeholder="type in a city name" />
-            <input type="submit" value="FIND WEATHER" id="submit"/>
+            <input type="search" placeholder="Enter city name"/>
+            <button className="submit">FIND WEATHER</button>
           </form>
         </nav>
         <div className="content">
