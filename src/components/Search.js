@@ -10,23 +10,12 @@ class Search extends React.Component {
   render() {
     return (
       <div className="app">
-        <div className="search">
-          {this.state.input}
-          <input
-            type="text"
-            id="input-name"
-            onChange={event => {
-              this.setState({ input: event.target.value });
-            }}
-          />
-          <button
-            onClick={event => {
-              this.props.handleInput(this.state.input);
-            }}
-          >
-            FIND WEATHER
-          </button>
-        </div>
+        <nav class="navbar">
+          <form>
+            <input type="search" placeholder="Enter city name"/>
+            <button className="submit">FIND WEATHER</button>
+          </form>
+        </nav>
       </div>
     );
   }

@@ -10,16 +10,14 @@ import rain from './img/weather-icons/rain.svg'
 import snow from './img/weather-icons/snow.svg'
 import unknown from './img/weather-icons/unknown.svg'
 
-// import SayHi, { SayHello } from "./components/WeatherItem";
-// import fakeWeatherData from "./fakeWeatherData.json";
-
 import "./App.css";
+import Search from "./components/Search";
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: "louai"
+      name: "Omair and Rabih"
     };
   }
 
@@ -30,12 +28,7 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <nav class="navbar">
-          <form>
-            <input type="search" placeholder="Enter city name"/>
-            <button className="submit">FIND WEATHER</button>
-          </form>
-        </nav>
+        <Search />
         <div className="content">
           <img src={mostlycloudy} alt="mostlycloudy icon" className=" main"/>
           <h3>overcast cloud</h3>
