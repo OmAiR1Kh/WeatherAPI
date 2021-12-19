@@ -12,6 +12,8 @@ import unknown from './img/weather-icons/unknown.svg'
 
 import "./App.css";
 import Search from "./components/Search";
+import WeatherItem  from "./components/WeatherItem";
+import WeatherIcons from "./components/WeatherIcons";
 
 class App extends Component {
   constructor(props) {
@@ -29,49 +31,10 @@ class App extends Component {
     return (
       <div className="app">
         <Search />
-        <div className="content">
-          <img src={mostlycloudy} alt="mostlycloudy icon" className=" main"/>
-          <h3>overcast cloud</h3>
-          <p><span class="temp">Temparuture </span>10 ْto 11 ْC</p>
-          <p><span class="A">Humidity</span> 78% <span class="A">Pressure</span> 1008.48</p>
-        </div>
-        <div class="footer">
-          <div class="footerA">
-            <p>03:00</p>
-            <img src={mostlycloudy} alt="mostlycloudy icon" className="mostly"/>
-            <p>8 ْC</p>
-          </div>
-          <div class="footerA">
-          <p>06:00</p>
-            <img src={mostlycloudy} alt="mostlycloudy icon" className="mostly"/>
-            <p>9 ْC</p>
-          </div>
-          <div class="footerA">
-          <p>09:00</p>
-            <img src={clear} alt="clear icon" className="mostly"/>
-            <p>14 ْC</p>
-          </div>
-          <div class="footerA">
-          <p>12:00</p>
-            <img src={clear} alt="clear icon" className="mostly"/>
-            <p>17 ْC</p>
-          </div>
-          <div class="footerA">
-          <p>15:00</p>
-            <img src={clear} alt="clear icon" className="mostly"/>
-            <p>18 ْC</p>
-          </div>
-          <div class="footerA">
-          <p>18:00</p>
-            <img src={clear} alt="clear icon" className="mostly"/>
-            <p>16 ْC</p>
-          </div>
-          <div class="footerA">
-          <p>21:00</p>
-          <img src={mostlycloudy} alt="mostlycloudy icon" className="mostly"/>
-            <p>13 ْC</p>
-          </div>
-        </div>
+
+        <WeatherItem />
+        
+        <WeatherIcons />
       </div>
     );
   }
