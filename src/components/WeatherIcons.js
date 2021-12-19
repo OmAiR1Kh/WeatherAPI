@@ -10,6 +10,7 @@ import rain from '../img/weather-icons/rain.svg'
 import snow from '../img/weather-icons/snow.svg'
 import unknown from '../img/weather-icons/unknown.svg'
 import mostlycloudy from '../img/weather-icons/mostlycloudy.svg'
+import FakeWeather from "../fakeWeatherData.json"
 
 class WeatherIcons extends Component {
     constructor(props) {
